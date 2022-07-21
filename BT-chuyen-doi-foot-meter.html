@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập chuyển đổi giữa Feet và Meters</title>
+</head>
+<body>
+<p id="fTM"></p>
+<p id="mTF"></p>
+<script>
+  function footToMeter(foot) {
+      return 0.305 * foot;
+  }
+  function meterToFeet(meter) {
+      return 3.279 * meter;
+  }
+
+  let feet = +prompt("Nhập vào kích thước (feet) cần chuyển đổi");
+  document.getElementById("fTM").innerHTML = "Meter = " + footToMeter(feet);
+
+  let meters = +prompt("Nhập vào kích thước (meter) cần chuyển đổi");
+  document.getElementById("mTF").innerHTML = "Feet = " + meterToFeet(meters);
+</script>
+</body>
+</html>
